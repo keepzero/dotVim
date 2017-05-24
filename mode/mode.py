@@ -7,7 +7,7 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 
 def main():
     "test function"
-    print "test"
+    print("test")
 
 if __name__ == '__main__':
     main()

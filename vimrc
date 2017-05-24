@@ -24,7 +24,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 "
 " Python
-Plugin 'python-mode/python-mode'
+"Plugin 'python-mode/python-mode'
+Plugin 'valloric/youcompleteme'
 " Others
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'git://git.wincent.com/command-t.git'
