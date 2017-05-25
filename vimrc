@@ -1,5 +1,5 @@
 " load plugins
-source plugins.vim
+source ~/.vim/plugins.vim
 
 " set encodings
 set encoding=utf-8
