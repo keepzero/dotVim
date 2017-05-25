@@ -39,7 +39,6 @@ Plugin 'valloric/youcompleteme'
 " Others
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'jiangmiao/auto-pairs.git'
-Plugin 'roxma/vim-paste-easy'
 "Plugin 'ack.vim'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'genutils'
