@@ -1,11 +1,9 @@
 # My dotVim
 
-## TODO
-
-- py dev
-- go dev
-- js/node dev
-- html
-- shell
-- markdown
-- snippet
+- [x] py dev
+- [x] go dev
+- [x] markdown
+- [x] snippet
+- [ ] js/node dev
+- [ ] html
+- [ ] shell

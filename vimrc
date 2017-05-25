@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'jlanzarotta/bufexplorer'
+"Plugin 'fholgado/minibufexpl.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -20,6 +21,7 @@ Plugin 'bling/vim-airline'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'ctrlpvim/ctrlp.vim'
 "
 " Markdown
 Plugin 'godlygeek/tabular'
@@ -33,9 +35,19 @@ Plugin 'fatih/vim-go'
 "
 " Complete
 Plugin 'valloric/youcompleteme'
+"
 " Others
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'git://git.wincent.com/command-t.git'
+"Plugin 'Marks-Browser'
+"Plugin 'genutils'
+"Plugin 'Indent-Guides'
+"Plugin 'genutils'
+"Plugin 'AndrewRadev/splitjoin.vim'
+"Plugin 'jiangmiao/auto-pairs.git'
+"Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Plugin 'grep.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -212,15 +224,19 @@ if exists(":Tabularize")
 endif
 
 " python-mode
-let g:pymode_options_max_line_length=999
+let g:pymode_options_max_line_length = 999
+let g:pymode_rope = 0
+
+" vim-go
+let g:go_fmt_command = "goimports"
 
 " youcompleteme
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 nnoremap <leader>gd :YcmCompleter GoTo<CR>
-let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
+let g:ycm_key_list_select_completion = ['<c-n>', '<Enter>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 
 " ultisnip
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-b"
+let g:UltiSnipsJumpBackwardTrigger = "<c-b>"
