@@ -172,7 +172,8 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>md :w !Markdown.pl > %.html<CR><CR>
 
 " BufExplorer
-nnoremap <leader>b :BufExplorer<cr>
+nnoremap <leader>be :BufExplorer<cr>
+nnoremap <leader>bf :BufExplorer<cr>
 
 " nerdtree.vim
 nnoremap <Leader>fl :NERDTreeToggle<CR>
