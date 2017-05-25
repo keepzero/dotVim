@@ -18,13 +18,20 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bling/vim-airline'
 Plugin 'myusuf3/numbers.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 "
 " Markdown
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 "
 " Python
-"Plugin 'python-mode/python-mode'
+Plugin 'python-mode/python-mode'
+"
+" Go
+Plugin 'fatih/vim-go'
+"
+" Complete
 Plugin 'valloric/youcompleteme'
 " Others
 "Plugin 'tpope/vim-fugitive'
@@ -206,3 +213,14 @@ endif
 
 " python-mode
 let g:pymode_options_max_line_length=999
+
+" youcompleteme
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
+nnoremap <leader>gd :YcmCompleter GoTo<CR>
+let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
+
+" ultisnip
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-b"
