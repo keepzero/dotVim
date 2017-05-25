@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'jlanzarotta/bufexplorer'
-"Plugin 'fholgado/minibufexpl.vim'
+Plugin 'fholgado/minibufexpl.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -37,17 +37,16 @@ Plugin 'fatih/vim-go'
 Plugin 'valloric/youcompleteme'
 "
 " Others
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'jiangmiao/auto-pairs.git'
+Plugin 'roxma/vim-paste-easy'
+"Plugin 'ack.vim'
 "Plugin 'tpope/vim-fugitive'
-"Plugin 'git://git.wincent.com/command-t.git'
+"Plugin 'genutils'
 "Plugin 'Marks-Browser'
-"Plugin 'genutils'
-"Plugin 'Indent-Guides'
-"Plugin 'genutils'
 "Plugin 'AndrewRadev/splitjoin.vim'
-"Plugin 'jiangmiao/auto-pairs.git'
 "Plugin 'Lokaltog/vim-easymotion'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Plugin 'grep.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,7 +57,7 @@ set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 " set colorscheme
-let t_Co=256
+"let t_Co=256
 colorscheme lucius
 LuciusBlackLowContrast
 
@@ -240,3 +239,25 @@ let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-b>"
+
+" ctrlp
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+" indent guides
+let g:indent_guides_start_level = 3
+let g:indent_guides_guide_size = 1
+nmap <Leader>ig :IndentGuidesToggle<CR>
+map <Leader>ch :call SetColorColumn()<CR>
+function! SetColorColumn()
+    let col_num = virtcol(".")
+    let cc_list = split(&cc, ',')
+    if count(cc_list, string(col_num)) <= 0
+        execute "set cc+=".col_num
+    else
+        execute "set cc-=".col_num
+    endif
+endfunction
+
+" minibufexpl
+let g:miniBufExplorerAutoStart = 0
