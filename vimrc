@@ -35,6 +35,9 @@ Plugin 'fatih/vim-go'
 "
 " Complete
 Plugin 'valloric/youcompleteme'
+" 
+" Lint
+"Plugin 'w0rp/ale'
 "
 " Others
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -45,7 +48,6 @@ Plugin 'jiangmiao/auto-pairs.git'
 "Plugin 'Marks-Browser'
 "Plugin 'AndrewRadev/splitjoin.vim'
 "Plugin 'Lokaltog/vim-easymotion'
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -115,7 +117,7 @@ set foldlevel=100
 nnoremap <space> za
 
 " auto language indent
-autocmd FileType python,erlang,java,sh set ts=4 sw=4 et sts=4
+autocmd FileType python,erlang,java,sh set ts=4 sw=4 et sts=4 wrap
 autocmd FileType c,cpp set tabstop=8 shiftwidth=8 noexpandtab sts=8
 autocmd FileType go set tabstop=4 shiftwidth=4 noexpandtab sts=4
 autocmd FileType lua set tabstop=4 shiftwidth=4 noexpandtab sts=4
@@ -232,8 +234,9 @@ let g:go_fmt_command = "goimports"
 " youcompleteme
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 nnoremap <leader>gd :YcmCompleter GoTo<CR>
-let g:ycm_key_list_select_completion = ['<c-n>', '<Enter>', '<Down>']
+let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
+let g:ycm_min_num_of_chars_for_completion = 3
 
 " ultisnip
 let g:UltiSnipsExpandTrigger = "<tab>"
