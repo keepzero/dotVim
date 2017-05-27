@@ -42,12 +42,14 @@ Plugin 'valloric/youcompleteme'
 " Others
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'jiangmiao/auto-pairs.git'
-"Plugin 'ack.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'mileszs/ack.vim'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'genutils'
 "Plugin 'Marks-Browser'
 "Plugin 'AndrewRadev/splitjoin.vim'
-"Plugin 'Lokaltog/vim-easymotion'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

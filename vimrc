@@ -212,3 +212,14 @@ endfunction
 
 " minibufexpl
 let g:miniBufExplorerAutoStart = 0
+
+" easy-motion
+" <Leader>f{char} to move to {char}
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+" s{char}{char} to move to {char}{char}
+nmap <Leader>s <Plug>(easymotion-overwin-f2)
+" Move to word
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" ack.vim
+nnoremap <Leader>a :Ack<Space>
