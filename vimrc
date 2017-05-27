@@ -223,3 +223,6 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 " ack.vim
 nnoremap <Leader>a :Ack<Space>
+
+" jsx
+let g:jsx_ext_required = 0

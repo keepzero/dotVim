@@ -33,6 +33,10 @@ Plugin 'python-mode/python-mode'
 " Go
 Plugin 'fatih/vim-go'
 "
+" js
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+"
 " Complete
 Plugin 'valloric/youcompleteme'
 " 
