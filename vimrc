@@ -175,6 +175,7 @@ endif
 " python-mode
 let g:pymode_options_max_line_length = 999
 let g:pymode_rope = 0
+let g:pymode_python = 'python3'
 
 " vim-go
 let g:go_fmt_command = "goimports"

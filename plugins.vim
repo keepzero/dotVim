@@ -27,6 +27,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 "
+" Jinja2
+Plugin 'Glench/Vim-Jinja2-Syntax'
+"
 " Python
 Plugin 'python-mode/python-mode'
 "
