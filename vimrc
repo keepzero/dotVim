@@ -227,3 +227,6 @@ nnoremap <Leader>a :Ack<Space>
 
 " jsx
 let g:jsx_ext_required = 0
+
+" Dash
+nnoremap <Leader>da :Dash<CR>
