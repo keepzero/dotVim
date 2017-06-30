@@ -45,10 +45,10 @@ inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
-inoremap <C-w> <Esc>dbcl
-inoremap <C-d> <Esc>s
-inoremap <C-u> <Esc>d0cl
-inoremap <C-k> <Esc>lC
+"inoremap <C-w> <Esc>dbcl
+inoremap <C-d> <C-o>s
+"inoremap <C-u> <Esc>d0cl
+inoremap <C-k> <C-o>C
 
 "
 " all tabs to expand to four spaces
