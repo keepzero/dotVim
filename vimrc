@@ -176,6 +176,7 @@ endif
 let g:pymode_options_max_line_length = 999
 let g:pymode_rope = 0
 let g:pymode_python = 'python3'
+let g:pymode_lint_ignore = 'E402'
 
 " vim-go
 let g:go_fmt_command = "goimports"
@@ -230,3 +231,8 @@ let g:jsx_ext_required = 0
 
 " Dash
 nnoremap <Leader>da :Dash<CR>
+
+" Gui
+if has('gui_running')
+    set guifont=Source\ Code\ Pro\ Light:h12
+endif

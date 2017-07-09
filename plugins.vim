@@ -54,11 +54,15 @@ Plugin 'tpope/vim-repeat'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mileszs/ack.vim'
 Plugin 'rizzatti/dash.vim'
-Plugin 'ybian/smartim'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'genutils'
 "Plugin 'Marks-Browser'
 "Plugin 'AndrewRadev/splitjoin.vim'
+"
+" macOS only
+if has('mac')
+    Plugin 'ybian/smartim'
+endif
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
